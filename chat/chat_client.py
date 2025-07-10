@@ -5,7 +5,7 @@ def receive_messages(socket_obj):
     while True:
         try:
             msg = socket_obj.receive()
-            print(f"\n📨 {msg}")
+            print(f"\n📨 {msg}\n")
         except:
             print("❌ Disconnected from server.")
             break
